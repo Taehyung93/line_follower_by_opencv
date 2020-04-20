@@ -1,7 +1,7 @@
 ![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/move.gif)
 
 # 프로젝트 개요
-[[ https://github.com/Taehyung93/line_follower_by_opencv/blob/master/first.png | height = 300px ]]
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/first.png)
 ```
 해당 프로젝트는 SBA 에서 주관하는 "딥러닝기술을 이용한 영상처리응용프로젝트개발과정"의 4개월과정(2019.08.01 - 2019.11.29) 중
 프로젝트 개발기간에 한달여간 팀원들과 진행한 프로젝트이다.
