@@ -4,9 +4,12 @@
 프로젝트 개발기간에 한달여간 팀원들과 진행한 프로젝트이다.
 해당 프로젝트의 목표는 공장의 지게차로봇을 라인주행 기반으로 회피기능까지 넣어 자동주행이 가능하도록 모델을 만드는 것이다.
 다만 직접 공장의 로봇으로 프로젝트 진행은 못했고, turtlebot 으로 간소하게 진행되었다.
-그러나 기본적인 로봇구동인 roscore 는 같고 코드 또한 로봇의 낮은 컴퓨팅 파워로도 가져다 쓸 수 있는 정도이므로 해당 프로젝트의 가치가 있다.
+그러나 기본적인 로봇구동인 roscore 는 같고 코드 또한 로봇의 낮은 컴퓨팅 파워로도
+가져다 쓸 수 있는 정도이므로 해당 프로젝트의 가치가 있다.
+주행 동영상 링크: https://www.youtube.com/watch?v=LMctUQzZSn4
+코드 해설 링크: https://www.youtube.com/watch?v=khmd59ibSeA
 ```
-<iframe width="640" height="360" src="https://www.youtube.com/embed/LMctUQzZSn4" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/move.gif)
 ## 환경 구성
 ```
 turtlebot OS는 turtlebot 회사에서 제공해주는 라즈비안 OS 이다.
@@ -87,6 +90,7 @@ ROS 에서 제공되는 라이다 관련 라이브러리를 활용해 알고리�
 ```
 ### CNN 모델에 입력
 ```
+주행 지도학습 시킨 데이터 링크 :https://www.dropbox.com/s/cg35py4r8mx1nj8/dataset_1.h5?dl=0
 tensorflow 로 제작한 CNN 모델에 전처리된 영상데이터를 주입한다.
 layer 는 2 층으로 설계했는데 라즈베리파이의 연산력의 제한때문에 더 늘리지는 못했다.
 출력으로는 직진([0100]), 좌회전([1000]), 우회전([0010]), 라인없음([0001) 의 4 개의 클래스에 대한 확률값이 나온다. 
@@ -180,7 +184,10 @@ turtlebot을 직각으로 꺾은 후 우회경로가 기존 경로에 크게 벗
 ```
 CNN 모델만을 저장하는 파일. 모델 수정역시 여기서 한다.
 ```
-
+### trainer.py
+```
+저장된 영상 프레임별 방향키를 학습시키는 코드이다. 여기서 학습을 시켜서 모델을 만든다.
+```
 ## collector.py 소스코드 분석
 
 - 이 소스코드가 해당 오픈소스의 핵심이다.
