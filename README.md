@@ -86,6 +86,7 @@ ROS 에서 제공되는 라이다 관련 라이브러리를 활용해 알고리�
 기존의 카메라의 각도가 너무 높은 탓에 하단의 라인을 잘 보지 못했기 때문에 카메라를 약간 기울여 고정했다.
 ```
 ### 영상 전처리
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/fourth.png)
 ```
 획득된 영상을 openCV 의 전처리 기능을 이용해 전처리한다.
 이미지 처리에서 주로 하는 처리과정인 gray scale 화 하였다.
@@ -160,6 +161,7 @@ turtlebot을 직각으로 꺾은 후 우회경로가 기존 경로에 크게 벗
 저장된 데이터는 ‘h5py’ 모듈을 이용해 turtlebot 라즈베리파이에 저장한다.
 ```
 ### 학습
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/second.png)
 ```
 위 과정을 통해 저장된 학습용 데이터를 로컬에 가져와 openCV 를 이용해 데이터를 프레임 단위로 확인할 수 있다.
 만약 학습하기에 좋지 않은 데이터가 있다면 편집할 수 있다.
@@ -175,6 +177,7 @@ turtlebot을 직각으로 꺾은 후 우회경로가 기존 경로에 크게 벗
 그럴 땐 주행을 하며 잘못된 행동을 할 때에만 수동으로 조종을 하고 그 때의 데이터를 저장한다. 
 ```
 ### 재학습
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/third.png)
 ```
 추가로 수집된 학습 데이터를 노트북으로 가져와 학습을 시킬 수 있는데,
 기존의 데이터와 합칠 수도 있고 별도로 학습시킬 수도 있다.
