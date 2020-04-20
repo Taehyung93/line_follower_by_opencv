@@ -13,7 +13,7 @@
 
 - 주행 동영상 링크: https://www.youtube.com/watch?v=LMctUQzZSn4
 
-- 코드 해설 링크: https://www.youtube.com/watch?v=khmd59ibSeA
+- 코드 해설 링크: https://www.youtube.com/watch?v=Q2wWeVA13tE
 
 ## 환경 구성
 ```
