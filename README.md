@@ -1,4 +1,7 @@
+![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/move.gif)
+
 # 프로젝트 개요
+[[ https://github.com/Taehyung93/line_follower_by_opencv/blob/master/first.png | height = 300px ]]
 ```
 해당 프로젝트는 SBA 에서 주관하는 "딥러닝기술을 이용한 영상처리응용프로젝트개발과정"의 4개월과정(2019.08.01 - 2019.11.29) 중
 프로젝트 개발기간에 한달여간 팀원들과 진행한 프로젝트이다.
@@ -6,10 +9,12 @@
 다만 직접 공장의 로봇으로 프로젝트 진행은 못했고, turtlebot 으로 간소하게 진행되었다.
 그러나 기본적인 로봇구동인 roscore 는 같고 코드 또한 로봇의 낮은 컴퓨팅 파워로도
 가져다 쓸 수 있는 정도이므로 해당 프로젝트의 가치가 있다.
-주행 동영상 링크: https://www.youtube.com/watch?v=LMctUQzZSn4
-코드 해설 링크: https://www.youtube.com/watch?v=khmd59ibSeA
 ```
-![Alt Text](https://github.com/Taehyung93/line_follower_by_opencv/blob/master/move.gif)
+
+- 주행 동영상 링크: https://www.youtube.com/watch?v=LMctUQzZSn4
+
+- 코드 해설 링크: https://www.youtube.com/watch?v=khmd59ibSeA
+
 ## 환경 구성
 ```
 turtlebot OS는 turtlebot 회사에서 제공해주는 라즈비안 OS 이다.
